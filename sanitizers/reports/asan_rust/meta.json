@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-05-15T07:55:27Z",
+  "stage": "3a_asan_rust",
+  "otterbrix": {
+    "head_sha": "91707eb4239fb6556b44066a56df44f88dbc1264",
+    "head_subject": "fix build, ci, docker"
+  },
+  "host": {
+    "hostname": "fedora",
+    "kernel": "Linux 6.14.5-100.fc40.x86_64 x86_64",
+    "os": "Fedora Linux 40 (KDE Plasma)",
+    "cpu_model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz"
+  },
+  "toolchain": {
+    "rustc_nightly": "rustc 1.97.0-nightly (4b0c9d76a 2026-05-10)",
+    "stable_rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)"
+  },
+  "asan_options": "detect_leaks=0:abort_on_error=0:halt_on_error=0",
+  "rustflags": "-Z sanitizer=address",
+  "libotterbrix_so": "build/integration/c/libotterbrix.so (Release, NOT instrumented)",
+  "command": "see cmd.sh"
+}

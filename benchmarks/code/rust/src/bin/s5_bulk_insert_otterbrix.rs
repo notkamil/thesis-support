@@ -1,0 +1,46 @@
+use otterbrix::Database;
+use otterbrix_bench::csv;
+use otterbrix_bench::data::bench_rows;
+use otterbrix_bench::{bench_config, fresh_workdir};
+use otterbrix_bench::scenarios::{DB, N_BULK, N_BULK_RUNS, N_BULK_WARMUP, TBL};
+use std::fmt::Write as _;
+use std::time::Instant;
+
+fn build_bulk_sql() -> String {
+    let mut s = String::with_capacity(N_BULK * 60);
+    write!(s, "INSERT INTO {DB}.{TBL} (id, name, x) VALUES ").unwrap();
+    for (i, r) in bench_rows(N_BULK).into_iter().enumerate() {
+        if i > 0 {
+            s.push_str(", ");
+        }
+        write!(s, "({}, '{}', {})", r.id, r.name, r.x).unwrap();
+    }
+    s.push(';');
+    s
+}
+
+fn one_run(bulk_sql: &str, prefix: &str, run: usize) -> u128 {
+    let workdir = fresh_workdir(&format!("{prefix}{run}_"));
+    let db = Database::open(bench_config(workdir.path())).expect("open");
+    db.create_database(DB).expect("create db");
+    db.create_collection(DB, TBL).expect("create collection");
+
+    let t0 = Instant::now();
+    db.execute(bulk_sql).expect("bulk insert");
+    t0.elapsed().as_nanos()
+}
+
+fn main() {
+    let bulk_sql = build_bulk_sql();
+
+    for run in 0..N_BULK_WARMUP {
+        let _ = one_run(&bulk_sql, "s5_ob_warm_", run);
+    }
+
+    let mut samples = Vec::with_capacity(N_BULK_RUNS);
+    for run in 0..N_BULK_RUNS {
+        samples.push(one_run(&bulk_sql, "s5_ob_", run));
+    }
+
+    csv::write_samples("s5_bulk_insert_otterbrix", &samples);
+}

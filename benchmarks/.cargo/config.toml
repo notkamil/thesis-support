@@ -1,0 +1,22 @@
+# Make the bench workspace self-contained: every cargo invocation in this
+# tree automatically points to the otterbrix shared library that
+# bootstrap.sh produced under .workdir/dist/current/.
+#
+# Both build-time bindgen (OTTERBRIX_INCLUDE_DIR) and link-time search
+# (OTTERBRIX_LIB_DIR) resolve through the `current` symlink, so callers
+# never need to remember the exact SHA.
+#
+# `relative = true` makes cargo expand the value to an absolute path based
+# on the location of THIS file (benchmarks/.cargo/config.toml), so the
+# result does not depend on the current working directory at the time of
+# the cargo invocation.
+[env]
+OTTERBRIX_LIB_DIR     = { value = ".workdir/dist/current/lib",     relative = true, force = true }
+OTTERBRIX_INCLUDE_DIR = { value = ".workdir/dist/current/include", relative = true, force = true }
+
+# Bench codegen — pin to a concrete x86-64 micro-architecture level so
+# every Rust binary in this workspace compiles to the same instruction
+# set. Mirrors `clang -march=x86-64-v3` used for the C benches; keeps
+# the cross-language comparison honest.
+[build]
+rustflags = ["-C", "target-cpu=x86-64-v3"]

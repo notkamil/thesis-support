@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "code/rust",
+    ".workdir/repo/integration/rust/otterbrix-sys",
+    ".workdir/repo/integration/rust/otterbrix",
+    ".workdir/repo/integration/rust/seaorm-otterbrix",
+    ".workdir/repo/integration/rust/sqlx-otterbrix",
+]
+
+[workspace.package]
+edition = "2021"
+rust-version = "1.86.0"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = 0
+overflow-checks = false
+# Match the C side (which has no concept of stack unwinding): smaller
+# binaries, no .eh_frame, marginally tighter codegen on hot paths.
+panic = "abort"
+
+[profile.bench]
+inherits = "release"

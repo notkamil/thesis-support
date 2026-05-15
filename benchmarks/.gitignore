@@ -1,0 +1,17 @@
+# Local-only: cloned otterbrix sources + built libotterbrix.so live here.
+# Recreate with `./scripts/bootstrap.sh`.
+.workdir/
+
+# Cargo build output.
+target/
+
+# Deterministic datasets dumped by `gen_bench_data` (≈ tens of MB).
+# Recreate with `cargo run --release --bin gen_bench_data` from code/rust/.
+data/
+
+# C build output.
+code/c/bin/
+code/c/build/
+
+# NOTE: Cargo.lock IS committed on purpose — it pins the exact crate
+#       versions so the published numbers are bit-for-bit reproducible.

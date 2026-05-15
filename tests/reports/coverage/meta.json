@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-05-15T07:41:48Z",
+  "stage": "2_coverage",
+  "otterbrix": {
+    "repo": "git@github.com:notkamil/otterbrix.git",
+    "branch": "rust-ffi-bindings",
+    "head_sha": "91707eb4239fb6556b44066a56df44f88dbc1264",
+    "head_subject": "fix build, ci, docker",
+    "dirty": false
+  },
+  "host": {
+    "hostname": "fedora",
+    "kernel": "Linux 6.14.5-100.fc40.x86_64 x86_64",
+    "os": "Fedora Linux 40 (KDE Plasma)",
+    "cpu_model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+    "cpu_cores_logical": 8,
+    "ram_total_gib": 7.7
+  },
+  "toolchain": {
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)",
+    "cargo": "cargo 1.92.0 (344c4567c 2025-10-21)",
+    "cargo_llvm_cov": "cargo-llvm-cov 0.8.6",
+    "llvm": "21.1.3-rust-1.92.0-stable"
+  },
+  "command": "see cmd.sh"
+}

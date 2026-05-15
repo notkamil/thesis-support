@@ -1,0 +1,57 @@
+{
+  "stage": 4,
+  "timestamp_utc": "20260515T125531Z",
+  "generated_at_utc": "2026-05-15T12:55:31Z",
+  "scenarios_requested": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10"
+  ],
+  "layers_requested": [
+    "c",
+    "sys",
+    "otterbrix",
+    "seaorm",
+    "sqlx"
+  ],
+  "host": {
+    "hostname": "thesis",
+    "kernel": "6.14.0-34-generic",
+    "os": "Ubuntu 24.04.4 LTS",
+    "arch": "x86_64",
+    "cpu_model": "Intel(R) Xeon(R) E E-2456",
+    "cpu_cores_logical": 6,
+    "ram_mb": 31956
+  },
+  "toolchain": {
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+    "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+    "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+    "python": "3.12.3"
+  },
+  "compile_flags": {
+    "rust_profile": "release: opt-level=3, lto=thin, codegen-units=1, debug=0, overflow-checks=false, panic=abort",
+    "rust_rustflags": "-C target-cpu=x86-64-v3",
+    "c": "-std=c11 -O3 -flto=thin -march=x86-64-v3 -fno-omit-frame-pointer -DNDEBUG"
+  },
+  "otterbrix": {
+    "dist_path": "/root/benchmarks/.workdir/dist/91707eb4239f",
+    "git_commit_short": "91707eb4239f",
+    "git_commit_full": "91707eb4239fb6556b44066a56df44f88dbc1264",
+    "git_rev_requested": "91707eb4239fb6556b44066a56df44f88dbc1264"
+  },
+  "env": {
+    "LD_LIBRARY_PATH": "/root/benchmarks/.workdir/dist/current/lib",
+    "TMPDIR": "/tmp",
+    "OTTERBRIX_BENCH_RESULTS_DIR": "/root/benchmarks/results/raw/stage_4_20260515T125531Z",
+    "BENCH_RESULTS_DIR": "/root/benchmarks/results/raw/stage_4_20260515T125531Z",
+    "BENCH_DATA_DIR": "/root/benchmarks/data"
+  }
+}

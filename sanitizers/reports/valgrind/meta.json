@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-05-15T11:27:22Z",
+  "host": "fedora",
+  "distro": "Fedora Linux 40 (KDE Plasma)",
+  "kernel": "6.14.5-100.fc40.x86_64",
+  "git": {
+    "branch": "rust-ffi-bindings",
+    "sha": "91707eb4239fb6556b44066a56df44f88dbc1264",
+    "head_subject": "fix build, ci, docker"
+  },
+  "toolchain": {
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)",
+    "cc": "cc (GCC) 14.2.1 20240912 (Red Hat 14.2.1-3)",
+    "valgrind": "valgrind-3.24.0"
+  },
+  "libotterbrix_so": {
+    "path": "my/otterbrix/build/integration/c/libotterbrix.so",
+    "mtime": "2026-05-15 10:09:37",
+    "instrumented_with": "none (release build)"
+  },
+  "scope": {
+    "included": "all workspace tests except large_dataset.rs",
+    "excluded_pattern": "*large_dataset*",
+    "skipped_binaries": 3
+  },
+  "results": {
+    "binaries_run_under_valgrind": 46,
+    "passed": 231,
+    "failed": 0,
+    "ignored": 0,
+    "valgrind_error_summary_zero": 44,
+    "valgrind_error_summary_nonzero": 0,
+    "definitely_lost_nonzero": 0,
+    "indirectly_lost_nonzero": 0,
+    "possibly_lost_nonzero": 0,
+    "still_reachable_nonzero": 3,
+    "suppressed_nonzero": 86
+  },
+  "wallclock_sec": 323
+}

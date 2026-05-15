@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-05-15T11:09:18Z",
+  "host": "fedora",
+  "distro": "Fedora Linux 40 (KDE Plasma)",
+  "kernel": "6.14.5-100.fc40.x86_64",
+  "git": {
+    "branch": "rust-ffi-bindings",
+    "sha": "91707eb4239fb6556b44066a56df44f88dbc1264",
+    "head_subject": "fix build, ci, docker"
+  },
+  "toolchain": {
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)",
+    "cc": "cc (GCC) 14.2.1 20240912 (Red Hat 14.2.1-3)",
+    "libasan_pkg": "libasan-14.2.1-3.fc40.x86_64",
+    "libasan_path": "/usr/lib64/libasan.so.8"
+  },
+  "libotterbrix_so": {
+    "path": "my/otterbrix/build-asan/integration/c/libotterbrix.so",
+    "mtime": "2026-05-15 13:34:16",
+    "instrumented_with": "GCC -fsanitize=address (ENABLE_ASAN=ON)"
+  },
+  "results": {
+    "test_groups": 51,
+    "passed": 244,
+    "failed": 0,
+    "ignored": 0,
+    "asan_reports": 0,
+    "lsan_reports": 0
+  },
+  "wallclock_sec": 300
+}

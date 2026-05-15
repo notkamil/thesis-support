@@ -1,0 +1,37 @@
+# Valgrind suppressions for otterbrix Rust integration tests
+# Format: https://valgrind.org/docs/manual/manual-core.html#manual-core.suppress
+#
+# Each entry must be accompanied by a comment explaining where the report
+# came from and why it is being suppressed.
+
+# --------------------------------------------------------------------------
+# Rust std test runtime: TLS allocation for the per-thread mpmc context used
+# by `test::run_tests` to collect CompletedTest events. The 48-byte block is
+# pointed to from TLS that is torn down after Valgrind has already taken its
+# leak snapshot, hence "possibly lost". This is a known artifact of Rust's
+# `std::thread::current::init_current` path and has no relation to our code
+# or to the libotterbrix C++ core.
+{
+   rust-std-test-runtime-mpmc-context-tls
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   ...
+   fun:_ZN3std6thread6Thread3new*
+   ...
+}
+
+# --------------------------------------------------------------------------
+# Rust std stack-overflow handler: per-thread metadata installed in a global
+# BTreeMap by `std::sys::pal::unix::stack_overflow::thread_info::set_current_info`.
+# Intentionally never freed (cannot run cleanup safely on signal-handler
+# tear-down), so Valgrind reports it as "still reachable". Not our code.
+{
+   rust-std-stack-overflow-thread-info
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   ...
+   fun:_ZN3std3sys3pal4unix14stack_overflow11thread_info16set_current_info*
+   ...
+}
