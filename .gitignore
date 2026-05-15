@@ -14,6 +14,5 @@ __pycache__/
 .venv/
 venv/
 
-# Generic build / log noise
-*.log
+# Generic build noise
 *.tmp

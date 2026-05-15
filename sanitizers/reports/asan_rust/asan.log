@@ -1,0 +1,346 @@
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+running 6 tests
+test avg_min_max_aggregates ... ok
+test sum_aggregate ... ok
+test count_aggregate ... ok
+test order_by_desc ... ok
+test group_by ... ok
+test order_by_asc ... ok
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+running 5 tests
+test insert_multiple_rows ... ok
+test select_with_where ... ok
+test delete_rows ... ok
+test insert_and_select_single_row ... ok
+test update_rows ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 4 tests
+test column_name_returns_none_for_out_of_bounds_index ... ok
+test has_next_is_true_when_select_returns_rows ... ok
+test column_logical_type_returns_none_for_out_of_bounds_index ... ok
+test column_logical_type_returns_none_for_negative_index ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 6 tests
+test create_database_returns_cursor ... ok
+test create_collection_returns_cursor ... ok
+test drop_collection_then_database ... ok
+test create_table_via_sql ... ok
+test cursor_reports_integer_logical_type ... ok
+test cursor_reports_logical_type_for_basic_types ... ok
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 1 test
+test database_debug ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 5 tests
+test display_null_pointer ... ok
+test display_invalid_path ... ok
+test display_query_error ... ok
+test error_implements_std_error_trait ... ok
+test display_type_mismatch ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+running 6 tests
+test create_database_twice_returns_error ... ok
+test drop_nonexistent_database_returns_error ... ok
+test select_from_nonexistent_table ... ok
+test query_error_carries_code_and_message ... ok
+test drop_nonexistent_collection_returns_error ... ok
+test invalid_sql_returns_error ... ok
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 3 tests
+test database_rs_open_example ... ok
+test database_rs_execute_with_params_example ... ok
+test lib_rs_quick_start ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 3 tests
+test example_sales_report ... ok
+test example_task_journal ... ok
+test example_product_search ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 3 tests
+test rows_iterator_count ... ok
+test rows_iterator_values ... ok
+test row_index ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 5 tests
+test large_select_returns_all_rows ... ok
+test many_moderate_strings_round_trip ... ok
+test insert_many_rows_in_batches ... [2026-05-15 10:57:14.609] [__default__] [trace] [pid 153363 tid 153367] wrapper_dispatcher_t::execute session: 1230951629128
+test many_open_close_iterations_do_not_leak_resources ... ok
+test many_repeated_point_queries ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.47s
+running 4 tests
+test open_with_explicit_log_level ... ok
+test open_and_drop ... ok
+test open_with_config_builder ... ok
+test open_multiple_instances ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 4 tests
+test multiple_independent_databases_in_parallel_threads ... ok
+test parallel_selects_through_arc_mutex_dont_corrupt ... ok
+test mixed_read_write_workload_through_arc_mutex ... ok
+test parallel_inserts_through_arc_mutex_yield_full_count ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.96s
+running 3 tests
+test where_is_not_null ... ok
+test null_from_missing_column ... ok
+test where_is_null ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 20 tests
+test injection_with_comment_marker_in_string ... ok
+test injection_via_int_param_is_rejected_for_string_payload ... ok
+test injection_or_1_eq_1_does_not_match_extra_rows ... ok[2026-05-15 10:57:16.822] [__default__] [trace] [pid 154089 tid 154097] delete wrapper_dispatcher_t
+test injection_quote_in_string_param_is_stored_verbatim ... ok
+test duplicate_param_index_last_value_wins ... [2026-05-15 10:57:16.823] [__default__] [trace] [pid 154089 tid 154178] wrapper_dispatcher_t::send_plan session: 80047432620, $create_database: db 
+test delete_with_params ... ok
+test insert_all_supported_types ... ok
+test injection_with_semicolon_does_not_chain_statements ... [2026-05-15 10:57:16.825] [__default__] [trace] [pid 154089 tid 154192] manager_dispatcher_t::manager_dispatcher_t
+test missing_param_is_error ... ok
+test insert_repeated_placeholder_one_bind ... ok
+test insert_with_dollar_params ... ok
+test select_combined_and_or_with_params ... ok
+test select_where_bool_param ... ok
+test select_where_in_list_with_params ... ok
+test unknown_param_index_is_error ... ok
+test select_where_with_params ... ok
+test select_limit_offset_with_params ... ok
+test zero_param_index_is_error ... [2026-05-15 10:57:16.874] [__default__] [trace] [pid 154089 tid 154269] executor::execute_plan: WAL physical_insert
+test update_with_params ... [2026-05-15 10:57:16.879] [__default__] [trace] [pid 154089 tid 154252] manager_dispatcher_t::execute_plan session: 199229165632, $insert: {$raw_data: {$rows: 1}}
+test smoke_thousand_repetitions_does_not_deadlock ... ok
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.70s
+running 1 test
+test data_persists_across_reopen ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 17 tests
+test extract_empty_string ... [2026-05-15 10:57:17.588] [__default__] [trace] [pid 154333 tid 154362] executor: after await completed
+test extract_double_infinity ... ok
+test extract_double_nan ... [2026-05-15 10:57:17.602] [__default__] [trace] [pid 154333 tid 154341] delete manager_dispatcher_t
+test extract_double_value ... ok
+test extract_i64_min_and_max ... ok
+test extract_integer_value ... ok
+test extract_bool_value ... ok
+test column_names ... ok
+test value_display ... ok
+test extract_string_value ... ok[2026-05-15 10:57:17.610] [__default__] [trace] [pid 154333 tid 154444] manager_dispatcher_t:create_collection db.t
+test value_type_checkers_and_accessors ... ok
+test extract_u64_max ... ok
+test extract_uint_value ... ok
+test from_value_type_mismatch ... ok
+test get_value_by_name ... ok
+test extract_utf8_strings ... ok
+test from_value_typed_extraction ... ok
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+running 2 tests
+test test_create_destroy ... ok
+test test_execute_sql ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 19 tests
+test convert::error_mapping_tests::null_pointer_becomes_conn_error ... ok
+test convert::error_mapping_tests::invalid_path_becomes_conn_error ... ok
+test convert::null_for_type_tests::maps_known_logical_types_to_matching_null_variants ... ok
+test convert::error_mapping_tests::type_mismatch_becomes_type_error ... ok
+test convert::error_mapping_tests::query_error_becomes_exec_with_code_and_message ... ok
+test convert::null_for_type_tests::missing_logical_type_falls_back_to_string_null ... ok
+test convert::placeholder_tests::handles_doubled_single_quote_escape ... ok
+test convert::null_for_type_tests::unknown_logical_type_falls_back_to_string_null ... ok
+test convert::placeholder_tests::leaves_dollar_placeholders_untouched ... ok
+test convert::placeholder_tests::rewrites_simple_sequence ... ok
+test convert::placeholder_tests::skips_question_inside_double_quoted_identifier ... ok
+test convert::positional_key_tests::key_width_matches_constant ... ok
+test convert::placeholder_tests::skips_question_inside_single_quoted_string ... ok
+test convert::sea_value_to_param_tests::float_widens_to_double ... ok
+test convert::sea_value_to_param_tests::null_variants_collapse_to_sql_null ... ok
+test convert::sea_value_to_param_tests::signed_integers_widen_to_int64 ... ok
+test convert::positional_key_tests::keys_sort_in_index_order ... ok
+test convert::sea_value_to_param_tests::unsigned_integers_widen_to_uint64 ... ok
+test convert::sea_value_to_param_tests::unsupported_type_returns_type_error ... ok
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+running 5 tests
+test rows_affected_counts_multi_row_insert ... ok[2026-05-15 10:57:17.726] [__default__] [trace] [pid 154545 tid 154546] delete spaces: checkpoint complete
+test rows_affected_is_zero_for_ddl ... ok
+test rows_affected_counts_inserted_rows ... ok
+test rows_affected_counts_updated_rows ... ok
+test rows_affected_counts_deleted_rows ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+running 1 test
+test join_with_duplicate_id_column_uses_positional_keys ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 4 tests
+test insert_and_find_all_via_entity ... ok
+test find_multiple_via_entity ... ok
+test find_by_id_relies_on_limit_inlining ... ok
+test find_with_explicit_limit_and_offset ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+running 2 tests
+test entity_delete_by_id_removes_row ... ok
+test entity_update_changes_field ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+running 3 tests
+test unsupported_parameter_type_returns_type_error ... ok
+test invalid_sql_surfaces_exec_error ... ok
+test null_bigint_parameter_is_not_rejected_by_adapter ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 2 tests
+test proxy_rs_otterbrix_proxy_example ... ok
+test lib_rs_quick_start ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 2 tests
+test example_book_catalog ... ok
+test example_shared_connection ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+running 1 test
+test from_arc_shares_database_with_outside_code ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 4 tests
+test large_select_via_proxy_returns_all_rows ... ok
+test bulk_insert_via_proxy_returns_correct_rows_affected ... ok
+test many_open_close_cycles_via_proxy ... ok
+test many_point_queries_via_proxy ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+running 3 tests
+test concurrent_reads_through_cloned_connection ... [2026-05-15 10:57:19.298] [__default__] [trace] [pid 155138 tid 155163] executor: after await completed
+test concurrent_inserts_through_cloned_connection ... ok
+test mixed_writes_and_reads_through_cloned_connection ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.34s
+running 4 tests
+test execute_insert_with_no_params ... ok
+test injection_attempt_is_stored_verbatim ... ok[2026-05-15 10:57:19.483] [__default__] [trace] [pid 155198 tid 155217] executor: found waiting operator, type=3
+test execute_insert_with_positional_params ... ok
+test select_where_uses_params_safely ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 3 tests
+test small_int_widens_to_bigint ... ok
+test float_widens_to_double ... ok
+test roundtrip_basic_types ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 34 tests
+test convert::arguments_to_params_tests::each_kind_maps_to_matching_sql_param_value ... ok
+test convert::arguments_to_params_tests::indices_start_from_one_and_are_sequential ... ok
+test convert::arguments_to_params_tests::empty_list_yields_empty_vec ... ok
+test convert::error_mapping_tests::null_pointer_becomes_protocol_error ... ok
+test convert::error_mapping_tests::invalid_path_becomes_configuration_error ... ok
+test convert::error_mapping_tests::type_mismatch_becomes_protocol_error ... ok
+test convert::error_mapping_tests::query_error_becomes_database_error_with_code_and_message ... ok
+test convert::logical_to_type_info_tests::maps_each_logical_to_expected_kind ... ok
+test convert::logical_to_type_info_tests::na_falls_back_to_text ... ok
+test convert::logical_to_type_info_tests::none_falls_back_to_text ... ok
+test convert::logical_to_type_info_tests::unknown_logical_falls_back_to_text ... ok
+test convert::placeholder_tests::count_matches_rewrite ... ok
+test convert::placeholder_tests::count_skips_placeholders_inside_strings ... ok
+test convert::placeholder_tests::count_zero_for_no_placeholders ... ok
+test convert::placeholder_tests::ignores_question_marks_inside_single_quotes ... ok
+test convert::placeholder_tests::handles_doubled_single_quote_inside_string ... ok
+test convert::placeholder_tests::ignores_question_marks_inside_double_quotes ... ok
+test convert::placeholder_tests::leaves_existing_dollar_placeholders_untouched ... ok
+test convert::placeholder_tests::rewrites_simple_sequence ... ok
+test options::tests::debug_includes_storage_dir ... ok
+test options::tests::from_str_with_bare_path_falls_back_to_path ... ok
+test options::tests::from_str_with_otterbrix_scheme_double_slash ... ok
+test options::tests::from_str_with_otterbrix_scheme_single_slash ... ok
+test options::tests::from_url_accepts_otterbrix_scheme ... ok
+test options::tests::from_url_rejects_empty_path ... ok
+test options::tests::from_url_rejects_other_schemes ... ok
+test r#type::tests::from_str_recognises_each_known_name ... ok
+test r#type::tests::display_uses_name ... ok
+test options::tests::to_url_lossy_round_trips_to_otterbrix_scheme ... ok
+test r#type::tests::null_kind_reports_is_null ... ok
+test r#type::tests::from_str_rejects_unknown_name ... ok
+test r#type::tests::type_compatible_is_reflexive ... ok
+test r#type::tests::type_compatible_rejects_non_numeric_cross_kind ... ok
+test r#type::tests::type_compatible_treats_numeric_kinds_interchangeably ... ok
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 5 tests
+test insert_reports_inserted_count ... ok
+test ddl_reports_zero_rows ... ok
+test last_insert_id_is_zero_for_inserts ... ok
+test delete_reports_deleted_count ... ok
+test update_reports_updated_count ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+running 5 tests
+test decode_i64_from_double_truncates_toward_zero ... ok
+test decode_f64_from_int_widens ... [2026-05-15 10:57:19.697] [__default__] [trace] [pid 155381 tid 155390] wrapper_dispatcher_t::execute session: 51586123331
+test decode_string_round_trips_utf8 ... ok
+test decode_i64_from_bool_via_try_get_unchecked ... ok
+test decode_bool_from_int_treats_zero_as_false ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+running 1 test
+test join_with_duplicate_id_uses_positional_keys ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+running 4 tests
+test select_from_missing_table_yields_database_error ... ok
+test syntactically_invalid_sql_yields_database_error ... ok
+test decoding_null_into_non_optional_yields_column_decode_error ... ok
+test decoding_string_into_i64_yields_column_decode_error ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 1 test
+test lib_rs_quick_start ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 2 tests
+test example_feature_flags ... ok
+test example_order_stats ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+running 8 tests
+test close_hard_consumes_connection ... ok
+test executor_prepare_with_returns_statement_with_param_count ... ok
+test executor_describe_returns_unsupported_protocol_error ... ok
+test ping_can_be_called_repeatedly ... ok[2026-05-15 10:57:19.916] [__default__] [trace] [pid 155543 tid 155581] executor::execute_plan, session: 35576636780
+test round_trip_f32_via_double_column ... ok
+test bind_borrowed_str_works ... ok
+test round_trip_all_signed_integer_widths ... ok
+test round_trip_all_unsigned_integer_widths ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+running 4 tests
+test large_select_decodes_all_rows ... ok
+test bulk_insert_and_full_select ... ok
+test many_point_queries ... ok
+test many_open_close_cycles ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.97s
+running 2 tests
+test log_statements_disable_via_off_filter_still_works ... ok
+test log_statements_setting_does_not_break_queries ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 3 tests
+test independent_connections_in_parallel_tasks ... ok
+test shared_connection_through_arc_mutex ... ok
+test concurrent_reads_through_shared_arc_mutex ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+running 1 test
+test insert_select_and_param ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+running 5 tests
+test begin_returns_protocol_error_with_explanatory_message ... ok
+test flush_is_ok_and_should_flush_is_false ... ok
+test shrink_buffers_does_not_panic ... ok
+test ping_is_ok_and_close_is_ok ... ok
+test execute_invalid_dml_returns_database_error_then_connection_remains_usable ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+running 8 tests
+test round_trip_unsigned_integers ... ok
+test round_trip_floats ... [2026-05-15 10:57:21.397] [__default__] [trace] [pid 156165 tid 156168] delete manager_dispatcher_t
+test round_trip_string_including_utf8 ... ok
+test encode_option_some_round_trips ... ok
+test round_trip_narrow_signed_integers ... ok
+test round_trip_bool ... ok
+test round_trip_signed_integers ... ok
+test option_decodes_null_as_none_and_value_as_some ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+running 4 tests
+test otterbrix/src/database.rs - database::Database::open (line 187) - compile ... ok
+test otterbrix/src/database.rs - database::Database::execute_with_params (line 245) - compile ... ok
+test otterbrix/src/lib.rs - (line 31) - compile ... ok
+test otterbrix/src/value.rs - value::Value::get (line 145) ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+running 2 tests
+test seaorm-otterbrix/src/proxy.rs - proxy::OtterbrixProxy (line 44) - compile ... ok
+test seaorm-otterbrix/src/lib.rs - (line 20) - compile ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+running 4 tests
+test sqlx-otterbrix/src/options.rs - options::OtterbrixConnectOptions (line 38) - compile ... ok
+test sqlx-otterbrix/src/database.rs - database::Otterbrix (line 14) - compile ... ok
+test sqlx-otterbrix/src/lib.rs - (line 29) - compile ... ok
+test sqlx-otterbrix/src/type.rs - r#type::OtterbrixTypeInfo (line 31) ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s

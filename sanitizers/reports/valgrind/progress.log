@@ -1,0 +1,97 @@
+[run-start] 2026-05-15 14:19:17
+[start] 14:19:28 otterbrix-9c6201c4c0abeb62
+[done rc=0 dur=2s] 14:19:30 otterbrix-9c6201c4c0abeb62
+[start] 14:19:30 aggregation-2c9f118f19be7608
+[done rc=0 dur=13s] 14:19:43 aggregation-2c9f118f19be7608
+[start] 14:19:43 crud-f5d584743fd2b2ba
+[done rc=0 dur=10s] 14:19:53 crud-f5d584743fd2b2ba
+[start] 14:19:53 cursor-58ad8f56d51e72b1
+[done rc=0 dur=11s] 14:20:04 cursor-58ad8f56d51e72b1
+[start] 14:20:04 ddl-7e7162196c6251d3
+[done rc=0 dur=8s] 14:20:12 ddl-7e7162196c6251d3
+[start] 14:20:12 debug-569b4d455fd24df0
+[done rc=0 dur=5s] 14:20:17 debug-569b4d455fd24df0
+[start] 14:20:17 error_display-39c8c6acc7150561
+[done rc=0 dur=1s] 14:20:18 error_display-39c8c6acc7150561
+[start] 14:20:18 errors-dd1c98a885ac390d
+[done rc=0 dur=7s] 14:20:25 errors-dd1c98a885ac390d
+[start] 14:20:25 examples_mirror-2b3c15ffaf708b07
+[done rc=0 dur=6s] 14:20:31 examples_mirror-2b3c15ffaf708b07
+[start] 14:20:31 examples_run-5a3b333070f50423
+[done rc=0 dur=6s] 14:20:37 examples_run-5a3b333070f50423
+[start] 14:20:37 iterators-b52d204ff03940b3
+[done rc=0 dur=6s] 14:20:43 iterators-b52d204ff03940b3
+[skip] 14:20:43 large_dataset-993cac93ae40e15f
+[start] 14:20:43 lifecycle-8acca2c80fb464db
+[done rc=0 dur=6s] 14:20:49 lifecycle-8acca2c80fb464db
+[start] 14:20:49 multithread-c6c5fd2024bf92ab
+[done rc=0 dur=16s] 14:21:05 multithread-c6c5fd2024bf92ab
+[start] 14:21:05 nulls-bf827ba6f34f19df
+[done rc=0 dur=6s] 14:21:11 nulls-bf827ba6f34f19df
+[start] 14:21:11 params-b10a3f1066a6ce2d
+[done rc=0 dur=15s] 14:21:26 params-b10a3f1066a6ce2d
+[start] 14:21:26 persistence-68724a75aa071b1f
+[done rc=0 dur=6s] 14:21:32 persistence-68724a75aa071b1f
+[start] 14:21:32 values-fbce12acf1dcb82e
+[done rc=0 dur=9s] 14:21:41 values-fbce12acf1dcb82e
+[start] 14:21:41 otterbrix_sys-4ea2c29f475fba71
+[done rc=0 dur=1s] 14:21:42 otterbrix_sys-4ea2c29f475fba71
+[start] 14:21:42 smoke-3e863ad4bcf7ceb7
+[done rc=0 dur=6s] 14:21:48 smoke-3e863ad4bcf7ceb7
+[start] 14:21:48 seaorm_otterbrix-3715136483d17e78
+[done rc=0 dur=1s] 14:21:49 seaorm_otterbrix-3715136483d17e78
+[start] 14:21:49 affected_rows-0b93109b399c1135
+[done rc=0 dur=8s] 14:21:57 affected_rows-0b93109b399c1135
+[start] 14:21:57 duplicate_columns-cd81598b9ffef12b
+[done rc=0 dur=6s] 14:22:03 duplicate_columns-cd81598b9ffef12b
+[start] 14:22:03 entity-b193a82f394d76c5
+[done rc=0 dur=7s] 14:22:10 entity-b193a82f394d76c5
+[start] 14:22:10 entity_update_delete-67ba80e208e7eac1
+[done rc=0 dur=7s] 14:22:17 entity_update_delete-67ba80e208e7eac1
+[start] 14:22:17 errors-a6d2d68ba0fcce57
+[done rc=0 dur=6s] 14:22:23 errors-a6d2d68ba0fcce57
+[start] 14:22:23 examples_mirror-58a2c51df27686f7
+[done rc=0 dur=6s] 14:22:29 examples_mirror-58a2c51df27686f7
+[start] 14:22:29 examples_run-d0df1fcd7c482c0f
+[done rc=0 dur=7s] 14:22:36 examples_run-d0df1fcd7c482c0f
+[start] 14:22:36 from_arc-dde93b2e3f227451
+[done rc=0 dur=6s] 14:22:42 from_arc-dde93b2e3f227451
+[skip] 14:22:42 large_dataset-3c3177dd9678d1f7
+[start] 14:22:42 multithread-7b617de1dc265bf2
+[done rc=0 dur=11s] 14:22:53 multithread-7b617de1dc265bf2
+[start] 14:22:53 raw_query-6b368056290af869
+[done rc=0 dur=7s] 14:23:00 raw_query-6b368056290af869
+[start] 14:23:00 types-d517520369b51e8b
+[done rc=0 dur=7s] 14:23:07 types-d517520369b51e8b
+[start] 14:23:07 sqlx_otterbrix-9dff4bb0f44c23e0
+[done rc=0 dur=2s] 14:23:09 sqlx_otterbrix-9dff4bb0f44c23e0
+[start] 14:23:09 affected_rows-21a54a85524873dd
+[done rc=0 dur=7s] 14:23:16 affected_rows-21a54a85524873dd
+[start] 14:23:16 decoding-bf5a84130614b9be
+[done rc=0 dur=8s] 14:23:24 decoding-bf5a84130614b9be
+[start] 14:23:24 duplicate_columns-0197bc75fb56262c
+[done rc=0 dur=6s] 14:23:30 duplicate_columns-0197bc75fb56262c
+[start] 14:23:30 errors-a9be7fdca0def114
+[done rc=0 dur=7s] 14:23:37 errors-a9be7fdca0def114
+[start] 14:23:37 examples_mirror-4a4d1587b96a3f80
+[done rc=0 dur=6s] 14:23:43 examples_mirror-4a4d1587b96a3f80
+[start] 14:23:43 examples_run-78993a507d0e59a7
+[done rc=0 dur=7s] 14:23:50 examples_run-78993a507d0e59a7
+[start] 14:23:50 extras-595bd6b2cb539142
+[done rc=0 dur=9s] 14:23:59 extras-595bd6b2cb539142
+[skip] 14:23:59 large_dataset-943b4a2ca08bef79
+[start] 14:23:59 logging-971511b232591b1e
+[done rc=0 dur=6s] 14:24:05 logging-971511b232591b1e
+[start] 14:24:05 multithread-a00211500e04dbab
+[done rc=0 dur=11s] 14:24:16 multithread-a00211500e04dbab
+[start] 14:24:16 smoke-aca93ff9403dfa26
+[done rc=0 dur=6s] 14:24:22 smoke-aca93ff9403dfa26
+[start] 14:24:22 stubs-239b9bac9c102549
+[done rc=0 dur=7s] 14:24:29 stubs-239b9bac9c102549
+[start] 14:24:29 types-06fcd9b02768d70b
+[done rc=0 dur=9s] 14:24:38 types-06fcd9b02768d70b
+[start] 14:24:38 rust_out
+[done rc=0 dur=1s] 14:24:39 rust_out
+[start] 14:24:39 rust_out
+[done rc=0 dur=1s] 14:24:40 rust_out
+[run-end] 2026-05-15 14:24:40

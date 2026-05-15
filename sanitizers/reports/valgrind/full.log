@@ -1,0 +1,1178 @@
+   Compiling otterbrix-sys v0.1.0 (/home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/otterbrix-sys)
+   Compiling sqlx-otterbrix v0.1.0 (/home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/sqlx-otterbrix)
+   Compiling seaorm-otterbrix v0.1.0 (/home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/seaorm-otterbrix)
+   Compiling otterbrix v0.1.0 (/home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/otterbrix)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.04s
+==32211== Memcheck, a memory error detector
+==32211== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32211== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32211== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/otterbrix-9c6201c4c0abeb62
+==32211== 
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+==32211== 
+==32211== HEAP SUMMARY:
+==32211==     in use at exit: 456 bytes in 1 blocks
+==32211==   total heap usage: 216 allocs, 215 frees, 30,143 bytes allocated
+==32211== 
+==32211== LEAK SUMMARY:
+==32211==    definitely lost: 0 bytes in 0 blocks
+==32211==    indirectly lost: 0 bytes in 0 blocks
+==32211==      possibly lost: 0 bytes in 0 blocks
+==32211==    still reachable: 0 bytes in 0 blocks
+==32211==         suppressed: 456 bytes in 1 blocks
+==32211== 
+==32211== For lists of detected and suppressed errors, rerun with: -s
+==32211== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==32219== Memcheck, a memory error detector
+==32219== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32219== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32219== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/aggregation-2c9f118f19be7608
+==32219== 
+running 6 tests
+test avg_min_max_aggregates ... ok
+test group_by ... ok
+test sum_aggregate ... ok[2026-05-15 14:19:43.009] [__default__] [trace] [pid 32219 tid 32232] manager_dispatcher_t::execute_plan: result received, success: true
+test order_by_desc ... ok
+test order_by_asc ... ok
+test count_aggregate ... ok
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.41s
+==32219== 
+==32219== HEAP SUMMARY:
+==32219==     in use at exit: 504 bytes in 2 blocks
+==32219==   total heap usage: 11,069 allocs, 11,067 frees, 11,629,354 bytes allocated
+==32219== 
+==32219== LEAK SUMMARY:
+==32219==    definitely lost: 0 bytes in 0 blocks
+==32219==    indirectly lost: 0 bytes in 0 blocks
+==32219==      possibly lost: 0 bytes in 0 blocks
+==32219==    still reachable: 0 bytes in 0 blocks
+==32219==         suppressed: 504 bytes in 2 blocks
+==32219== 
+==32219== For lists of detected and suppressed errors, rerun with: -s
+==32219== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==32303== Memcheck, a memory error detector
+==32303== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32303== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32303== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/crud-f5d584743fd2b2ba
+==32303== 
+running 5 tests
+test delete_rows ... ok
+test select_with_where ... ok
+test insert_and_select_single_row ... ok
+test update_rows ... ok
+test insert_multiple_rows ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.54s
+==32303== 
+==32303== HEAP SUMMARY:
+==32303==     in use at exit: 504 bytes in 2 blocks
+==32303==   total heap usage: 9,875 allocs, 9,873 frees, 11,235,837 bytes allocated
+==32303== 
+==32303== LEAK SUMMARY:
+==32303==    definitely lost: 0 bytes in 0 blocks
+==32303==    indirectly lost: 0 bytes in 0 blocks
+==32303==      possibly lost: 0 bytes in 0 blocks
+==32303==    still reachable: 0 bytes in 0 blocks
+==32303==         suppressed: 504 bytes in 2 blocks
+==32303== 
+==32303== For lists of detected and suppressed errors, rerun with: -s
+==32303== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==32378== Memcheck, a memory error detector
+==32378== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32378== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32378== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/cursor-58ad8f56d51e72b1
+==32378== 
+running 4 tests
+test column_name_returns_none_for_out_of_bounds_index ... ok
+test column_logical_type_returns_none_for_out_of_bounds_index ... ok
+test has_next_is_true_when_select_returns_rows ... ok
+test column_logical_type_returns_none_for_negative_index ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.15s
+==32378== 
+==32378== HEAP SUMMARY:
+==32378==     in use at exit: 504 bytes in 2 blocks
+==32378==   total heap usage: 7,281 allocs, 7,279 frees, 5,827,527 bytes allocated
+==32378== 
+==32378== LEAK SUMMARY:
+==32378==    definitely lost: 0 bytes in 0 blocks
+==32378==    indirectly lost: 0 bytes in 0 blocks
+==32378==      possibly lost: 0 bytes in 0 blocks
+==32378==    still reachable: 0 bytes in 0 blocks
+==32378==         suppressed: 504 bytes in 2 blocks
+==32378== 
+==32378== For lists of detected and suppressed errors, rerun with: -s
+==32378== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==32717== Memcheck, a memory error detector
+==32717== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32717== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32717== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/ddl-7e7162196c6251d3
+==32717== 
+running 6 tests
+test create_table_via_sql ... ok
+test create_database_returns_cursor ... ok
+test drop_collection_then_database ... ok
+test cursor_reports_integer_logical_type ... ok
+test create_collection_returns_cursor ... ok
+test cursor_reports_logical_type_for_basic_types ... ok
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.69s
+==32717== 
+==32717== HEAP SUMMARY:
+==32717==     in use at exit: 504 bytes in 2 blocks
+==32717==   total heap usage: 8,519 allocs, 8,517 frees, 6,496,102 bytes allocated
+==32717== 
+==32717== LEAK SUMMARY:
+==32717==    definitely lost: 0 bytes in 0 blocks
+==32717==    indirectly lost: 0 bytes in 0 blocks
+==32717==      possibly lost: 0 bytes in 0 blocks
+==32717==    still reachable: 0 bytes in 0 blocks
+==32717==         suppressed: 504 bytes in 2 blocks
+==32717== 
+==32717== For lists of detected and suppressed errors, rerun with: -s
+==32717== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==32809== Memcheck, a memory error detector
+==32809== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32809== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32809== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/debug-569b4d455fd24df0
+==32809== 
+running 1 test
+test database_debug ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+==32809== 
+==32809== HEAP SUMMARY:
+==32809==     in use at exit: 504 bytes in 2 blocks
+==32809==   total heap usage: 2,751 allocs, 2,749 frees, 417,548 bytes allocated
+==32809== 
+==32809== LEAK SUMMARY:
+==32809==    definitely lost: 0 bytes in 0 blocks
+==32809==    indirectly lost: 0 bytes in 0 blocks
+==32809==      possibly lost: 0 bytes in 0 blocks
+==32809==    still reachable: 0 bytes in 0 blocks
+==32809==         suppressed: 504 bytes in 2 blocks
+==32809== 
+==32809== For lists of detected and suppressed errors, rerun with: -s
+==32809== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==32919== Memcheck, a memory error detector
+==32919== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32919== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32919== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/error_display-39c8c6acc7150561
+==32919== 
+running 5 tests
+test display_null_pointer ... ok
+test error_implements_std_error_trait ... ok
+test display_invalid_path ... ok
+test display_type_mismatch ... ok
+test display_query_error ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+==32919== 
+==32919== HEAP SUMMARY:
+==32919==     in use at exit: 504 bytes in 2 blocks
+==32919==   total heap usage: 344 allocs, 342 frees, 54,014 bytes allocated
+==32919== 
+==32919== LEAK SUMMARY:
+==32919==    definitely lost: 0 bytes in 0 blocks
+==32919==    indirectly lost: 0 bytes in 0 blocks
+==32919==      possibly lost: 0 bytes in 0 blocks
+==32919==    still reachable: 0 bytes in 0 blocks
+==32919==         suppressed: 504 bytes in 2 blocks
+==32919== 
+==32919== For lists of detected and suppressed errors, rerun with: -s
+==32919== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==32939== Memcheck, a memory error detector
+==32939== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==32939== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==32939== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/errors-dd1c98a885ac390d
+==32939== 
+running 6 tests
+test create_database_twice_returns_error ... ok
+test drop_nonexistent_collection_returns_error ... ok
+test drop_nonexistent_database_returns_error ... ok
+test invalid_sql_returns_error ... ok
+test query_error_carries_code_and_message ... ok
+test select_from_nonexistent_table ... ok
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.71s
+==32939== 
+==32939== HEAP SUMMARY:
+==32939==     in use at exit: 504 bytes in 2 blocks
+==32939==   total heap usage: 6,688 allocs, 6,686 frees, 1,797,631 bytes allocated
+==32939== 
+==32939== LEAK SUMMARY:
+==32939==    definitely lost: 0 bytes in 0 blocks
+==32939==    indirectly lost: 0 bytes in 0 blocks
+==32939==      possibly lost: 0 bytes in 0 blocks
+==32939==    still reachable: 0 bytes in 0 blocks
+==32939==         suppressed: 504 bytes in 2 blocks
+==32939== 
+==32939== For lists of detected and suppressed errors, rerun with: -s
+==32939== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33039== Memcheck, a memory error detector
+==33039== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33039== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33039== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/examples_mirror-2b3c15ffaf708b07
+==33039== 
+running 3 tests
+test database_rs_execute_with_params_example ... ok
+test database_rs_open_example ... ok
+test lib_rs_quick_start ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.31s
+==33039== 
+==33039== HEAP SUMMARY:
+==33039==     in use at exit: 504 bytes in 2 blocks
+==33039==   total heap usage: 5,439 allocs, 5,437 frees, 4,235,721 bytes allocated
+==33039== 
+==33039== LEAK SUMMARY:
+==33039==    definitely lost: 0 bytes in 0 blocks
+==33039==    indirectly lost: 0 bytes in 0 blocks
+==33039==      possibly lost: 0 bytes in 0 blocks
+==33039==    still reachable: 0 bytes in 0 blocks
+==33039==         suppressed: 504 bytes in 2 blocks
+==33039== 
+==33039== For lists of detected and suppressed errors, rerun with: -s
+==33039== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33086== Memcheck, a memory error detector
+==33086== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33086== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33086== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/examples_run-5a3b333070f50423
+==33086== 
+running 3 tests
+test example_sales_report ... ok
+test example_task_journal ... ok
+test example_product_search ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.90s
+==33086== 
+==33086== HEAP SUMMARY:
+==33086==     in use at exit: 504 bytes in 2 blocks
+==33086==   total heap usage: 9,839 allocs, 9,837 frees, 11,925,717 bytes allocated
+==33086== 
+==33086== LEAK SUMMARY:
+==33086==    definitely lost: 0 bytes in 0 blocks
+==33086==    indirectly lost: 0 bytes in 0 blocks
+==33086==      possibly lost: 0 bytes in 0 blocks
+==33086==    still reachable: 0 bytes in 0 blocks
+==33086==         suppressed: 504 bytes in 2 blocks
+==33086== 
+==33086== For lists of detected and suppressed errors, rerun with: -s
+==33086== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33134== Memcheck, a memory error detector
+==33134== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33134== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33134== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/iterators-b52d204ff03940b3
+==33134== 
+running 3 tests
+test rows_iterator_count ... ok
+test rows_iterator_values ... ok
+test row_index ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.34s
+==33134== 
+==33134== HEAP SUMMARY:
+==33134==     in use at exit: 504 bytes in 2 blocks
+==33134==   total heap usage: 5,936 allocs, 5,934 frees, 5,110,760 bytes allocated
+==33134== 
+==33134== LEAK SUMMARY:
+==33134==    definitely lost: 0 bytes in 0 blocks
+==33134==    indirectly lost: 0 bytes in 0 blocks
+==33134==      possibly lost: 0 bytes in 0 blocks
+==33134==    still reachable: 0 bytes in 0 blocks
+==33134==         suppressed: 504 bytes in 2 blocks
+==33134== 
+==33134== For lists of detected and suppressed errors, rerun with: -s
+==33134== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33184== Memcheck, a memory error detector
+==33184== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33184== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33184== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/lifecycle-8acca2c80fb464db
+==33184== 
+running 4 tests
+test open_with_config_builder ... ok
+test open_with_explicit_log_level ... ok
+test open_and_drop ... ok
+test open_multiple_instances ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.24s
+==33184== 
+==33184== HEAP SUMMARY:
+==33184==     in use at exit: 504 bytes in 2 blocks
+==33184==   total heap usage: 5,778 allocs, 5,776 frees, 1,326,972 bytes allocated
+==33184== 
+==33184== LEAK SUMMARY:
+==33184==    definitely lost: 0 bytes in 0 blocks
+==33184==    indirectly lost: 0 bytes in 0 blocks
+==33184==      possibly lost: 0 bytes in 0 blocks
+==33184==    still reachable: 0 bytes in 0 blocks
+==33184==         suppressed: 504 bytes in 2 blocks
+==33184== 
+==33184== For lists of detected and suppressed errors, rerun with: -s
+==33184== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33252== Memcheck, a memory error detector
+==33252== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33252== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33252== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/multithread-c6c5fd2024bf92ab
+==33252== 
+running 4 tests
+test multiple_independent_databases_in_parallel_threads ... ok
+test parallel_selects_through_arc_mutex_dont_corrupt ... ok
+test mixed_read_write_workload_through_arc_mutex ... ok
+test parallel_inserts_through_arc_mutex_yield_full_count ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.58s
+==33252== 
+==33252== HEAP SUMMARY:
+==33252==     in use at exit: 504 bytes in 2 blocks
+==33252==   total heap usage: 441,832 allocs, 441,830 frees, 154,999,194 bytes allocated
+==33252== 
+==33252== LEAK SUMMARY:
+==33252==    definitely lost: 0 bytes in 0 blocks
+==33252==    indirectly lost: 0 bytes in 0 blocks
+==33252==      possibly lost: 0 bytes in 0 blocks
+==33252==    still reachable: 0 bytes in 0 blocks
+==33252==         suppressed: 504 bytes in 2 blocks
+==33252== 
+==33252== For lists of detected and suppressed errors, rerun with: -s
+==33252== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33357== Memcheck, a memory error detector
+==33357== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33357== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33357== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/nulls-bf827ba6f34f19df
+==33357== 
+running 3 tests
+test null_from_missing_column ... ok
+test where_is_null ... ok
+test where_is_not_null ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.51s
+==33357== 
+==33357== HEAP SUMMARY:
+==33357==     in use at exit: 504 bytes in 2 blocks
+==33357==   total heap usage: 7,123 allocs, 7,121 frees, 7,132,504 bytes allocated
+==33357== 
+==33357== LEAK SUMMARY:
+==33357==    definitely lost: 0 bytes in 0 blocks
+==33357==    indirectly lost: 0 bytes in 0 blocks
+==33357==      possibly lost: 0 bytes in 0 blocks
+==33357==    still reachable: 0 bytes in 0 blocks
+==33357==         suppressed: 504 bytes in 2 blocks
+==33357== 
+==33357== For lists of detected and suppressed errors, rerun with: -s
+==33357== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33404== Memcheck, a memory error detector
+==33404== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33404== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33404== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/params-b10a3f1066a6ce2d
+==33404== 
+running 20 tests
+test injection_via_int_param_is_rejected_for_string_payload ... ok
+test insert_all_supported_types ... ok
+test duplicate_param_index_last_value_wins ... ok
+test injection_with_comment_marker_in_string ... ok
+test injection_or_1_eq_1_does_not_match_extra_rows ... ok
+test delete_with_params ... ok
+test missing_param_is_error ... ok
+test insert_repeated_placeholder_one_bind ... ok
+test injection_quote_in_string_param_is_stored_verbatim ... ok
+test injection_with_semicolon_does_not_chain_statements ... ok
+test insert_with_dollar_params ... ok
+test select_where_bool_param ... ok
+test select_limit_offset_with_params ... ok
+test select_combined_and_or_with_params ... ok[2026-05-15 14:21:20.772] [__default__] [trace] [pid 33404 tid 33571] spaces::manager_dispatcher finish
+test select_where_in_list_with_params ... ok
+test unknown_param_index_is_error ... ok
+test zero_param_index_is_error ... ok
+test select_where_with_params ... ok
+test update_with_params ... ok
+test smoke_thousand_repetitions_does_not_deadlock ... ok
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.82s
+==33404== 
+==33404== HEAP SUMMARY:
+==33404==     in use at exit: 504 bytes in 2 blocks
+==33404==   total heap usage: 294,965 allocs, 294,963 frees, 112,119,729 bytes allocated
+==33404== 
+==33404== LEAK SUMMARY:
+==33404==    definitely lost: 0 bytes in 0 blocks
+==33404==    indirectly lost: 0 bytes in 0 blocks
+==33404==      possibly lost: 0 bytes in 0 blocks
+==33404==    still reachable: 0 bytes in 0 blocks
+==33404==         suppressed: 504 bytes in 2 blocks
+==33404== 
+==33404== For lists of detected and suppressed errors, rerun with: -s
+==33404== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33640== Memcheck, a memory error detector
+==33640== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33640== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33640== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/persistence-68724a75aa071b1f
+==33640== 
+running 1 test
+test data_persists_across_reopen ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.21s
+==33640== 
+==33640== HEAP SUMMARY:
+==33640==     in use at exit: 8,704 bytes in 3 blocks
+==33640==   total heap usage: 5,228 allocs, 5,225 frees, 4,460,181 bytes allocated
+==33640== 
+==33640== LEAK SUMMARY:
+==33640==    definitely lost: 0 bytes in 0 blocks
+==33640==    indirectly lost: 0 bytes in 0 blocks
+==33640==      possibly lost: 0 bytes in 0 blocks
+==33640==    still reachable: 8,200 bytes in 1 blocks
+==33640==         suppressed: 504 bytes in 2 blocks
+==33640== Reachable blocks (those to which a pointer was found) are not shown.
+==33640== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==33640== 
+==33640== For lists of detected and suppressed errors, rerun with: -s
+==33640== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33676== Memcheck, a memory error detector
+==33676== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33676== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33676== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/values-fbce12acf1dcb82e
+==33676== 
+running 17 tests
+test extract_double_value ... ok
+test extract_double_infinity ... [2026-05-15 14:21:39.644] [__default__] [trace] [pid 33676 tid 33715] executor::execute_plan, session: 62259543465
+test extract_double_nan ... ok
+test extract_i64_min_and_max ... ok
+test extract_integer_value ... ok
+test extract_empty_string ... ok
+test column_names ... ok
+test extract_bool_value ... ok
+test value_display ... ok
+test extract_u64_max ... ok
+test value_type_checkers_and_accessors ... ok
+test extract_uint_value ... ok
+test from_value_type_mismatch ... ok
+test extract_utf8_strings ... ok
+test extract_string_value ... ok
+test from_value_typed_extraction ... ok
+test get_value_by_name ... ok
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.67s
+==33676== 
+==33676== HEAP SUMMARY:
+==33676==     in use at exit: 504 bytes in 2 blocks
+==33676==   total heap usage: 22,198 allocs, 22,196 frees, 25,917,814 bytes allocated
+==33676== 
+==33676== LEAK SUMMARY:
+==33676==    definitely lost: 0 bytes in 0 blocks
+==33676==    indirectly lost: 0 bytes in 0 blocks
+==33676==      possibly lost: 0 bytes in 0 blocks
+==33676==    still reachable: 0 bytes in 0 blocks
+==33676==         suppressed: 504 bytes in 2 blocks
+==33676== 
+==33676== For lists of detected and suppressed errors, rerun with: -s
+==33676== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33857== Memcheck, a memory error detector
+==33857== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33857== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33857== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/otterbrix_sys-4ea2c29f475fba71
+==33857== 
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+==33857== 
+==33857== HEAP SUMMARY:
+==33857==     in use at exit: 456 bytes in 1 blocks
+==33857==   total heap usage: 216 allocs, 215 frees, 30,147 bytes allocated
+==33857== 
+==33857== LEAK SUMMARY:
+==33857==    definitely lost: 0 bytes in 0 blocks
+==33857==    indirectly lost: 0 bytes in 0 blocks
+==33857==      possibly lost: 0 bytes in 0 blocks
+==33857==    still reachable: 0 bytes in 0 blocks
+==33857==         suppressed: 456 bytes in 1 blocks
+==33857== 
+==33857== For lists of detected and suppressed errors, rerun with: -s
+==33857== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==33865== Memcheck, a memory error detector
+==33865== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33865== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33865== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/smoke-3e863ad4bcf7ceb7
+==33865== 
+running 2 tests
+test test_create_destroy ... ok
+test test_execute_sql ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.86s
+==33865== 
+==33865== HEAP SUMMARY:
+==33865==     in use at exit: 504 bytes in 2 blocks
+==33865==   total heap usage: 4,099 allocs, 4,097 frees, 2,306,036 bytes allocated
+==33865== 
+==33865== LEAK SUMMARY:
+==33865==    definitely lost: 0 bytes in 0 blocks
+==33865==    indirectly lost: 0 bytes in 0 blocks
+==33865==      possibly lost: 0 bytes in 0 blocks
+==33865==    still reachable: 0 bytes in 0 blocks
+==33865==         suppressed: 504 bytes in 2 blocks
+==33865== 
+==33865== For lists of detected and suppressed errors, rerun with: -s
+==33865== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33901== Memcheck, a memory error detector
+==33901== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33901== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33901== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/seaorm_otterbrix-3715136483d17e78
+==33901== 
+running 19 tests
+test convert::null_for_type_tests::maps_known_logical_types_to_matching_null_variants ... ok
+test convert::null_for_type_tests::unknown_logical_type_falls_back_to_string_null ... ok
+test convert::placeholder_tests::handles_doubled_single_quote_escape ... ok
+test convert::error_mapping_tests::type_mismatch_becomes_type_error ... ok
+test convert::placeholder_tests::leaves_dollar_placeholders_untouched ... ok
+test convert::error_mapping_tests::query_error_becomes_exec_with_code_and_message ... ok
+test convert::error_mapping_tests::invalid_path_becomes_conn_error ... ok
+test convert::placeholder_tests::skips_question_inside_double_quoted_identifier ... ok
+test convert::placeholder_tests::rewrites_simple_sequence ... ok
+test convert::error_mapping_tests::null_pointer_becomes_conn_error ... ok
+test convert::placeholder_tests::skips_question_inside_single_quoted_string ... ok
+test convert::null_for_type_tests::missing_logical_type_falls_back_to_string_null ... ok
+test convert::sea_value_to_param_tests::float_widens_to_double ... ok
+test convert::positional_key_tests::keys_sort_in_index_order ... ok
+test convert::positional_key_tests::key_width_matches_constant ... ok
+test convert::sea_value_to_param_tests::null_variants_collapse_to_sql_null ... ok
+test convert::sea_value_to_param_tests::unsigned_integers_widen_to_uint64 ... ok
+test convert::sea_value_to_param_tests::signed_integers_widen_to_int64 ... ok
+test convert::sea_value_to_param_tests::unsupported_type_returns_type_error ... ok
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+==33901== 
+==33901== HEAP SUMMARY:
+==33901==     in use at exit: 504 bytes in 2 blocks
+==33901==   total heap usage: 799 allocs, 797 frees, 105,547 bytes allocated
+==33901== 
+==33901== LEAK SUMMARY:
+==33901==    definitely lost: 0 bytes in 0 blocks
+==33901==    indirectly lost: 0 bytes in 0 blocks
+==33901==      possibly lost: 0 bytes in 0 blocks
+==33901==    still reachable: 0 bytes in 0 blocks
+==33901==         suppressed: 504 bytes in 2 blocks
+==33901== 
+==33901== For lists of detected and suppressed errors, rerun with: -s
+==33901== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==33933== Memcheck, a memory error detector
+==33933== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==33933== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==33933== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/affected_rows-0b93109b399c1135
+==33933== 
+running 5 tests
+test rows_affected_counts_inserted_rows ... ok
+test rows_affected_is_zero_for_ddl ... ok
+test rows_affected_counts_deleted_rows ... ok
+test rows_affected_counts_multi_row_insert ... ok
+test rows_affected_counts_updated_rows ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.96s
+==33933== 
+==33933== HEAP SUMMARY:
+==33933==     in use at exit: 504 bytes in 2 blocks
+==33933==   total heap usage: 9,059 allocs, 9,057 frees, 8,930,161 bytes allocated
+==33933== 
+==33933== LEAK SUMMARY:
+==33933==    definitely lost: 0 bytes in 0 blocks
+==33933==    indirectly lost: 0 bytes in 0 blocks
+==33933==      possibly lost: 0 bytes in 0 blocks
+==33933==    still reachable: 0 bytes in 0 blocks
+==33933==         suppressed: 504 bytes in 2 blocks
+==33933== 
+==33933== For lists of detected and suppressed errors, rerun with: -s
+==33933== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34007== Memcheck, a memory error detector
+==34007== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34007== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34007== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/duplicate_columns-cd81598b9ffef12b
+==34007== 
+running 1 test
+test join_with_duplicate_id_column_uses_positional_keys ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.25s
+==34007== 
+==34007== HEAP SUMMARY:
+==34007==     in use at exit: 504 bytes in 2 blocks
+==34007==   total heap usage: 4,336 allocs, 4,334 frees, 4,074,941 bytes allocated
+==34007== 
+==34007== LEAK SUMMARY:
+==34007==    definitely lost: 0 bytes in 0 blocks
+==34007==    indirectly lost: 0 bytes in 0 blocks
+==34007==      possibly lost: 0 bytes in 0 blocks
+==34007==    still reachable: 0 bytes in 0 blocks
+==34007==         suppressed: 504 bytes in 2 blocks
+==34007== 
+==34007== For lists of detected and suppressed errors, rerun with: -s
+==34007== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34033== Memcheck, a memory error detector
+==34033== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34033== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34033== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/entity-b193a82f394d76c5
+==34033== 
+running 4 tests
+test insert_and_find_all_via_entity ... ok
+test find_multiple_via_entity ... ok
+test find_by_id_relies_on_limit_inlining ... ok
+test find_with_explicit_limit_and_offset ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.89s
+==34033== 
+==34033== HEAP SUMMARY:
+==34033==     in use at exit: 504 bytes in 2 blocks
+==34033==   total heap usage: 14,598 allocs, 14,596 frees, 12,037,793 bytes allocated
+==34033== 
+==34033== LEAK SUMMARY:
+==34033==    definitely lost: 0 bytes in 0 blocks
+==34033==    indirectly lost: 0 bytes in 0 blocks
+==34033==      possibly lost: 0 bytes in 0 blocks
+==34033==    still reachable: 0 bytes in 0 blocks
+==34033==         suppressed: 504 bytes in 2 blocks
+==34033== 
+==34033== For lists of detected and suppressed errors, rerun with: -s
+==34033== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34180== Memcheck, a memory error detector
+==34180== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34180== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34180== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/entity_update_delete-67ba80e208e7eac1
+==34180== 
+running 2 tests
+test entity_delete_by_id_removes_row ... ok
+test entity_update_changes_field ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.20s
+==34180== 
+==34180== HEAP SUMMARY:
+==34180==     in use at exit: 504 bytes in 2 blocks
+==34180==   total heap usage: 8,458 allocs, 8,456 frees, 6,327,775 bytes allocated
+==34180== 
+==34180== LEAK SUMMARY:
+==34180==    definitely lost: 0 bytes in 0 blocks
+==34180==    indirectly lost: 0 bytes in 0 blocks
+==34180==      possibly lost: 0 bytes in 0 blocks
+==34180==    still reachable: 0 bytes in 0 blocks
+==34180==         suppressed: 504 bytes in 2 blocks
+==34180== 
+==34180== For lists of detected and suppressed errors, rerun with: -s
+==34180== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34228== Memcheck, a memory error detector
+==34228== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34228== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34228== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/errors-a6d2d68ba0fcce57
+==34228== 
+running 3 tests
+test invalid_sql_surfaces_exec_error ... ok
+test null_bigint_parameter_is_not_rejected_by_adapter ... ok
+test unsupported_parameter_type_returns_type_error ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.06s
+==34228== 
+==34228== HEAP SUMMARY:
+==34228==     in use at exit: 504 bytes in 2 blocks
+==34228==   total heap usage: 4,958 allocs, 4,956 frees, 1,391,509 bytes allocated
+==34228== 
+==34228== LEAK SUMMARY:
+==34228==    definitely lost: 0 bytes in 0 blocks
+==34228==    indirectly lost: 0 bytes in 0 blocks
+==34228==      possibly lost: 0 bytes in 0 blocks
+==34228==    still reachable: 0 bytes in 0 blocks
+==34228==         suppressed: 504 bytes in 2 blocks
+==34228== 
+==34228== For lists of detected and suppressed errors, rerun with: -s
+==34228== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34279== Memcheck, a memory error detector
+==34279== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34279== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34279== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/examples_mirror-58a2c51df27686f7
+==34279== 
+running 2 tests
+test proxy_rs_otterbrix_proxy_example ... ok
+test lib_rs_quick_start ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.25s
+==34279== 
+==34279== HEAP SUMMARY:
+==34279==     in use at exit: 504 bytes in 2 blocks
+==34279==   total heap usage: 4,091 allocs, 4,089 frees, 2,557,835 bytes allocated
+==34279== 
+==34279== LEAK SUMMARY:
+==34279==    definitely lost: 0 bytes in 0 blocks
+==34279==    indirectly lost: 0 bytes in 0 blocks
+==34279==      possibly lost: 0 bytes in 0 blocks
+==34279==    still reachable: 0 bytes in 0 blocks
+==34279==         suppressed: 504 bytes in 2 blocks
+==34279== 
+==34279== For lists of detected and suppressed errors, rerun with: -s
+==34279== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34316== Memcheck, a memory error detector
+==34316== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34316== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34316== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/examples_run-d0df1fcd7c482c0f
+==34316== 
+running 2 tests
+test example_book_catalog ... ok
+test example_shared_connection ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.91s
+==34316== 
+==34316== HEAP SUMMARY:
+==34316==     in use at exit: 1,560 bytes in 4 blocks
+==34316==   total heap usage: 35,142 allocs, 35,138 frees, 14,945,274 bytes allocated
+==34316== 
+==34316== LEAK SUMMARY:
+==34316==    definitely lost: 0 bytes in 0 blocks
+==34316==    indirectly lost: 0 bytes in 0 blocks
+==34316==      possibly lost: 0 bytes in 0 blocks
+==34316==    still reachable: 1,056 bytes in 2 blocks
+==34316==         suppressed: 504 bytes in 2 blocks
+==34316== Reachable blocks (those to which a pointer was found) are not shown.
+==34316== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==34316== 
+==34316== For lists of detected and suppressed errors, rerun with: -s
+==34316== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34362== Memcheck, a memory error detector
+==34362== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34362== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34362== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/from_arc-dde93b2e3f227451
+==34362== 
+running 1 test
+test from_arc_shares_database_with_outside_code ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.01s
+==34362== 
+==34362== HEAP SUMMARY:
+==34362==     in use at exit: 504 bytes in 2 blocks
+==34362==   total heap usage: 3,627 allocs, 3,625 frees, 2,484,616 bytes allocated
+==34362== 
+==34362== LEAK SUMMARY:
+==34362==    definitely lost: 0 bytes in 0 blocks
+==34362==    indirectly lost: 0 bytes in 0 blocks
+==34362==      possibly lost: 0 bytes in 0 blocks
+==34362==    still reachable: 0 bytes in 0 blocks
+==34362==         suppressed: 504 bytes in 2 blocks
+==34362== 
+==34362== For lists of detected and suppressed errors, rerun with: -s
+==34362== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34391== Memcheck, a memory error detector
+==34391== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34391== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34391== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/multithread-7b617de1dc265bf2
+==34391== 
+running 3 tests
+test concurrent_reads_through_cloned_connection ... ok
+test mixed_writes_and_reads_through_cloned_connection ... ok
+test concurrent_inserts_through_cloned_connection ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.00s
+==34391== 
+==34391== HEAP SUMMARY:
+==34391==     in use at exit: 7,768 bytes in 8 blocks
+==34391==   total heap usage: 177,448 allocs, 177,440 frees, 64,171,974 bytes allocated
+==34391== 
+==34391== LEAK SUMMARY:
+==34391==    definitely lost: 0 bytes in 0 blocks
+==34391==    indirectly lost: 0 bytes in 0 blocks
+==34391==      possibly lost: 0 bytes in 0 blocks
+==34391==    still reachable: 7,264 bytes in 6 blocks
+==34391==         suppressed: 504 bytes in 2 blocks
+==34391== Reachable blocks (those to which a pointer was found) are not shown.
+==34391== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==34391== 
+==34391== For lists of detected and suppressed errors, rerun with: -s
+==34391== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34465== Memcheck, a memory error detector
+==34465== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34465== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34465== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/raw_query-6b368056290af869
+==34465== 
+running 4 tests
+test injection_attempt_is_stored_verbatim ... ok
+test execute_insert_with_positional_params ... ok
+test execute_insert_with_no_params ... ok
+test select_where_uses_params_safely ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.54s
+==34465== 
+==34465== HEAP SUMMARY:
+==34465==     in use at exit: 504 bytes in 2 blocks
+==34465==   total heap usage: 8,678 allocs, 8,676 frees, 9,107,812 bytes allocated
+==34465== 
+==34465== LEAK SUMMARY:
+==34465==    definitely lost: 0 bytes in 0 blocks
+==34465==    indirectly lost: 0 bytes in 0 blocks
+==34465==      possibly lost: 0 bytes in 0 blocks
+==34465==    still reachable: 0 bytes in 0 blocks
+==34465==         suppressed: 504 bytes in 2 blocks
+==34465== 
+==34465== For lists of detected and suppressed errors, rerun with: -s
+==34465== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34528== Memcheck, a memory error detector
+==34528== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34528== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34528== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/types-d517520369b51e8b
+==34528== 
+running 3 tests
+test small_int_widens_to_bigint ... ok
+test roundtrip_basic_types ... ok
+test float_widens_to_double ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.04s
+==34528== 
+==34528== HEAP SUMMARY:
+==34528==     in use at exit: 504 bytes in 2 blocks
+==34528==   total heap usage: 6,887 allocs, 6,885 frees, 7,305,267 bytes allocated
+==34528== 
+==34528== LEAK SUMMARY:
+==34528==    definitely lost: 0 bytes in 0 blocks
+==34528==    indirectly lost: 0 bytes in 0 blocks
+==34528==      possibly lost: 0 bytes in 0 blocks
+==34528==    still reachable: 0 bytes in 0 blocks
+==34528==         suppressed: 504 bytes in 2 blocks
+==34528== 
+==34528== For lists of detected and suppressed errors, rerun with: -s
+==34528== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34578== Memcheck, a memory error detector
+==34578== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34578== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34578== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/sqlx_otterbrix-9dff4bb0f44c23e0
+==34578== 
+running 34 tests
+test convert::error_mapping_tests::invalid_path_becomes_configuration_error ... ok
+test convert::arguments_to_params_tests::each_kind_maps_to_matching_sql_param_value ... ok
+test convert::error_mapping_tests::query_error_becomes_database_error_with_code_and_message ... ok
+test convert::logical_to_type_info_tests::na_falls_back_to_text ... ok
+test convert::error_mapping_tests::null_pointer_becomes_protocol_error ... ok
+test convert::arguments_to_params_tests::indices_start_from_one_and_are_sequential ... ok
+test convert::logical_to_type_info_tests::maps_each_logical_to_expected_kind ... ok
+test convert::logical_to_type_info_tests::unknown_logical_falls_back_to_text ... ok
+test convert::logical_to_type_info_tests::none_falls_back_to_text ... ok
+test convert::placeholder_tests::count_matches_rewrite ... ok
+test convert::error_mapping_tests::type_mismatch_becomes_protocol_error ... ok
+test convert::placeholder_tests::handles_doubled_single_quote_inside_string ... ok
+test convert::placeholder_tests::count_skips_placeholders_inside_strings ... ok
+test convert::arguments_to_params_tests::empty_list_yields_empty_vec ... ok
+test convert::placeholder_tests::ignores_question_marks_inside_single_quotes ... ok
+test convert::placeholder_tests::count_zero_for_no_placeholders ... ok
+test convert::placeholder_tests::ignores_question_marks_inside_double_quotes ... ok
+test convert::placeholder_tests::leaves_existing_dollar_placeholders_untouched ... ok
+test convert::placeholder_tests::rewrites_simple_sequence ... ok
+test options::tests::debug_includes_storage_dir ... ok
+test options::tests::from_str_with_bare_path_falls_back_to_path ... ok
+test options::tests::from_url_accepts_otterbrix_scheme ... ok
+test r#type::tests::display_uses_name ... ok
+test options::tests::from_str_with_otterbrix_scheme_single_slash ... ok
+test r#type::tests::from_str_rejects_unknown_name ... ok
+test options::tests::from_str_with_otterbrix_scheme_double_slash ... ok
+test r#type::tests::type_compatible_is_reflexive ... ok
+test options::tests::from_url_rejects_empty_path ... ok
+test r#type::tests::from_str_recognises_each_known_name ... ok
+test r#type::tests::null_kind_reports_is_null ... ok
+test options::tests::to_url_lossy_round_trips_to_otterbrix_scheme ... ok
+test options::tests::from_url_rejects_other_schemes ... ok
+test r#type::tests::type_compatible_rejects_non_numeric_cross_kind ... ok
+test r#type::tests::type_compatible_treats_numeric_kinds_interchangeably ... ok
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.44s
+==34578== 
+==34578== HEAP SUMMARY:
+==34578==     in use at exit: 504 bytes in 2 blocks
+==34578==   total heap usage: 1,079 allocs, 1,077 frees, 164,983 bytes allocated
+==34578== 
+==34578== LEAK SUMMARY:
+==34578==    definitely lost: 0 bytes in 0 blocks
+==34578==    indirectly lost: 0 bytes in 0 blocks
+==34578==      possibly lost: 0 bytes in 0 blocks
+==34578==    still reachable: 0 bytes in 0 blocks
+==34578==         suppressed: 504 bytes in 2 blocks
+==34578== 
+==34578== For lists of detected and suppressed errors, rerun with: -s
+==34578== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34624== Memcheck, a memory error detector
+==34624== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34624== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34624== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/affected_rows-21a54a85524873dd
+==34624== 
+running 5 tests
+test last_insert_id_is_zero_for_inserts ... ok
+test delete_reports_deleted_count ... ok
+test insert_reports_inserted_count ... ok
+test ddl_reports_zero_rows ... ok
+test update_reports_updated_count ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.03s
+==34624== 
+==34624== HEAP SUMMARY:
+==34624==     in use at exit: 504 bytes in 2 blocks
+==34624==   total heap usage: 9,477 allocs, 9,475 frees, 9,615,817 bytes allocated
+==34624== 
+==34624== LEAK SUMMARY:
+==34624==    definitely lost: 0 bytes in 0 blocks
+==34624==    indirectly lost: 0 bytes in 0 blocks
+==34624==      possibly lost: 0 bytes in 0 blocks
+==34624==    still reachable: 0 bytes in 0 blocks
+==34624==         suppressed: 504 bytes in 2 blocks
+==34624== 
+==34624== For lists of detected and suppressed errors, rerun with: -s
+==34624== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34698== Memcheck, a memory error detector
+==34698== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34698== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34698== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/decoding-bf5a84130614b9be
+==34698== 
+running 5 tests
+test decode_bool_from_int_treats_zero_as_false ... ok
+test decode_f64_from_int_widens ... ok
+test decode_i64_from_bool_via_try_get_unchecked ... ok
+test decode_i64_from_double_truncates_toward_zero ... ok
+test decode_string_round_trips_utf8 ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.13s
+==34698== 
+==34698== HEAP SUMMARY:
+==34698==     in use at exit: 504 bytes in 2 blocks
+==34698==   total heap usage: 11,615 allocs, 11,613 frees, 12,997,324 bytes allocated
+==34698== 
+==34698== LEAK SUMMARY:
+==34698==    definitely lost: 0 bytes in 0 blocks
+==34698==    indirectly lost: 0 bytes in 0 blocks
+==34698==      possibly lost: 0 bytes in 0 blocks
+==34698==    still reachable: 0 bytes in 0 blocks
+==34698==         suppressed: 504 bytes in 2 blocks
+==34698== 
+==34698== For lists of detected and suppressed errors, rerun with: -s
+==34698== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34775== Memcheck, a memory error detector
+==34775== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34775== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34775== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/duplicate_columns-0197bc75fb56262c
+==34775== 
+running 1 test
+test join_with_duplicate_id_uses_positional_keys ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.31s
+==34775== 
+==34775== HEAP SUMMARY:
+==34775==     in use at exit: 504 bytes in 2 blocks
+==34775==   total heap usage: 4,450 allocs, 4,448 frees, 4,355,712 bytes allocated
+==34775== 
+==34775== LEAK SUMMARY:
+==34775==    definitely lost: 0 bytes in 0 blocks
+==34775==    indirectly lost: 0 bytes in 0 blocks
+==34775==      possibly lost: 0 bytes in 0 blocks
+==34775==    still reachable: 0 bytes in 0 blocks
+==34775==         suppressed: 504 bytes in 2 blocks
+==34775== 
+==34775== For lists of detected and suppressed errors, rerun with: -s
+==34775== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34801== Memcheck, a memory error detector
+==34801== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34801== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34801== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/errors-a9be7fdca0def114
+==34801== 
+running 4 tests
+test select_from_missing_table_yields_database_error ... ok
+test syntactically_invalid_sql_yields_database_error ... ok
+test decoding_string_into_i64_yields_column_decode_error ... ok
+test decoding_null_into_non_optional_yields_column_decode_error ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.54s
+==34801== 
+==34801== HEAP SUMMARY:
+==34801==     in use at exit: 504 bytes in 2 blocks
+==34801==   total heap usage: 7,020 allocs, 7,018 frees, 5,875,786 bytes allocated
+==34801== 
+==34801== LEAK SUMMARY:
+==34801==    definitely lost: 0 bytes in 0 blocks
+==34801==    indirectly lost: 0 bytes in 0 blocks
+==34801==      possibly lost: 0 bytes in 0 blocks
+==34801==    still reachable: 0 bytes in 0 blocks
+==34801==         suppressed: 504 bytes in 2 blocks
+==34801== 
+==34801== For lists of detected and suppressed errors, rerun with: -s
+==34801== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34863== Memcheck, a memory error detector
+==34863== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34863== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34863== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/examples_mirror-4a4d1587b96a3f80
+==34863== 
+running 1 test
+test lib_rs_quick_start ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.28s
+==34863== 
+==34863== HEAP SUMMARY:
+==34863==     in use at exit: 504 bytes in 2 blocks
+==34863==   total heap usage: 3,662 allocs, 3,660 frees, 2,498,175 bytes allocated
+==34863== 
+==34863== LEAK SUMMARY:
+==34863==    definitely lost: 0 bytes in 0 blocks
+==34863==    indirectly lost: 0 bytes in 0 blocks
+==34863==      possibly lost: 0 bytes in 0 blocks
+==34863==    still reachable: 0 bytes in 0 blocks
+==34863==         suppressed: 504 bytes in 2 blocks
+==34863== 
+==34863== For lists of detected and suppressed errors, rerun with: -s
+==34863== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34890== Memcheck, a memory error detector
+==34890== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34890== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34890== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/examples_run-78993a507d0e59a7
+==34890== 
+running 2 tests
+test example_feature_flags ... ok
+test example_order_stats ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.06s
+==34890== 
+==34890== HEAP SUMMARY:
+==34890==     in use at exit: 504 bytes in 2 blocks
+==34890==   total heap usage: 10,821 allocs, 10,819 frees, 7,744,532 bytes allocated
+==34890== 
+==34890== LEAK SUMMARY:
+==34890==    definitely lost: 0 bytes in 0 blocks
+==34890==    indirectly lost: 0 bytes in 0 blocks
+==34890==      possibly lost: 0 bytes in 0 blocks
+==34890==    still reachable: 0 bytes in 0 blocks
+==34890==         suppressed: 504 bytes in 2 blocks
+==34890== 
+==34890== For lists of detected and suppressed errors, rerun with: -s
+==34890== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==34928== Memcheck, a memory error detector
+==34928== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==34928== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==34928== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/extras-595bd6b2cb539142
+==34928== 
+running 8 tests
+test close_hard_consumes_connection ... ok
+test executor_prepare_with_returns_statement_with_param_count ... ok
+test ping_can_be_called_repeatedly ... ok
+test bind_borrowed_str_works ... ok
+test executor_describe_returns_unsupported_protocol_error ... ok
+test round_trip_all_unsigned_integer_widths ... ok
+test round_trip_all_signed_integer_widths ... ok
+test round_trip_f32_via_double_column ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.77s
+==34928== 
+==34928== HEAP SUMMARY:
+==34928==     in use at exit: 504 bytes in 2 blocks
+==34928==   total heap usage: 13,330 allocs, 13,328 frees, 12,040,361 bytes allocated
+==34928== 
+==34928== LEAK SUMMARY:
+==34928==    definitely lost: 0 bytes in 0 blocks
+==34928==    indirectly lost: 0 bytes in 0 blocks
+==34928==      possibly lost: 0 bytes in 0 blocks
+==34928==    still reachable: 0 bytes in 0 blocks
+==34928==         suppressed: 504 bytes in 2 blocks
+==34928== 
+==34928== For lists of detected and suppressed errors, rerun with: -s
+==34928== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==35043== Memcheck, a memory error detector
+==35043== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==35043== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==35043== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/logging-971511b232591b1e
+==35043== 
+running 2 tests
+test log_statements_disable_via_off_filter_still_works ... ok
+test log_statements_setting_does_not_break_queries ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.63s
+==35043== 
+==35043== HEAP SUMMARY:
+==35043==     in use at exit: 504 bytes in 2 blocks
+==35043==   total heap usage: 4,583 allocs, 4,581 frees, 3,011,464 bytes allocated
+==35043== 
+==35043== LEAK SUMMARY:
+==35043==    definitely lost: 0 bytes in 0 blocks
+==35043==    indirectly lost: 0 bytes in 0 blocks
+==35043==      possibly lost: 0 bytes in 0 blocks
+==35043==    still reachable: 0 bytes in 0 blocks
+==35043==         suppressed: 504 bytes in 2 blocks
+==35043== 
+==35043== For lists of detected and suppressed errors, rerun with: -s
+==35043== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==35081== Memcheck, a memory error detector
+==35081== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==35081== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==35081== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/multithread-a00211500e04dbab
+==35081== 
+running 3 tests
+test independent_connections_in_parallel_tasks ... ok
+test concurrent_reads_through_shared_arc_mutex ... ok
+test shared_connection_through_arc_mutex ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.17s
+==35081== 
+==35081== HEAP SUMMARY:
+==35081==     in use at exit: 504 bytes in 2 blocks
+==35081==   total heap usage: 124,192 allocs, 124,190 frees, 53,393,462 bytes allocated
+==35081== 
+==35081== LEAK SUMMARY:
+==35081==    definitely lost: 0 bytes in 0 blocks
+==35081==    indirectly lost: 0 bytes in 0 blocks
+==35081==      possibly lost: 0 bytes in 0 blocks
+==35081==    still reachable: 0 bytes in 0 blocks
+==35081==         suppressed: 504 bytes in 2 blocks
+==35081== 
+==35081== For lists of detected and suppressed errors, rerun with: -s
+==35081== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==35181== Memcheck, a memory error detector
+==35181== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==35181== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==35181== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/smoke-aca93ff9403dfa26
+==35181== 
+running 1 test
+test insert_select_and_param ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.30s
+==35181== 
+==35181== HEAP SUMMARY:
+==35181==     in use at exit: 504 bytes in 2 blocks
+==35181==   total heap usage: 3,664 allocs, 3,662 frees, 2,498,838 bytes allocated
+==35181== 
+==35181== LEAK SUMMARY:
+==35181==    definitely lost: 0 bytes in 0 blocks
+==35181==    indirectly lost: 0 bytes in 0 blocks
+==35181==      possibly lost: 0 bytes in 0 blocks
+==35181==    still reachable: 0 bytes in 0 blocks
+==35181==         suppressed: 504 bytes in 2 blocks
+==35181== 
+==35181== For lists of detected and suppressed errors, rerun with: -s
+==35181== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==35208== Memcheck, a memory error detector
+==35208== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==35208== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==35208== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/stubs-239b9bac9c102549
+==35208== 
+running 5 tests
+test begin_returns_protocol_error_with_explanatory_message ... ok
+test shrink_buffers_does_not_panic ... ok
+test flush_is_ok_and_should_flush_is_false ... ok
+test ping_is_ok_and_close_is_ok ... ok
+test execute_invalid_dml_returns_database_error_then_connection_remains_usable ... ok
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.99s
+==35208== 
+==35208== HEAP SUMMARY:
+==35208==     in use at exit: 504 bytes in 2 blocks
+==35208==   total heap usage: 6,415 allocs, 6,413 frees, 3,171,997 bytes allocated
+==35208== 
+==35208== LEAK SUMMARY:
+==35208==    definitely lost: 0 bytes in 0 blocks
+==35208==    indirectly lost: 0 bytes in 0 blocks
+==35208==      possibly lost: 0 bytes in 0 blocks
+==35208==    still reachable: 0 bytes in 0 blocks
+==35208==         suppressed: 504 bytes in 2 blocks
+==35208== 
+==35208== For lists of detected and suppressed errors, rerun with: -s
+==35208== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+==35282== Memcheck, a memory error detector
+==35282== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==35282== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==35282== Command: /home/notkamil/ITMO/S8/diploma/my/otterbrix/integration/rust/target/x86_64-unknown-linux-gnu/debug/deps/types-06fcd9b02768d70b
+==35282== 
+running 8 tests
+test round_trip_floats ... ok
+test encode_option_some_round_trips ... ok
+test option_decodes_null_as_none_and_value_as_some ... ok
+test round_trip_bool ... ok
+test round_trip_signed_integers ... ok
+test round_trip_narrow_signed_integers ... ok
+test round_trip_unsigned_integers ... ok
+test round_trip_string_including_utf8 ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.34s
+==35282== 
+==35282== HEAP SUMMARY:
+==35282==     in use at exit: 504 bytes in 2 blocks
+==35282==   total heap usage: 17,847 allocs, 17,845 frees, 21,125,388 bytes allocated
+==35282== 
+==35282== LEAK SUMMARY:
+==35282==    definitely lost: 0 bytes in 0 blocks
+==35282==    indirectly lost: 0 bytes in 0 blocks
+==35282==      possibly lost: 0 bytes in 0 blocks
+==35282==    still reachable: 0 bytes in 0 blocks
+==35282==         suppressed: 504 bytes in 2 blocks
+==35282== 
+==35282== For lists of detected and suppressed errors, rerun with: -s
+==35282== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1 from 1)
+   Doc-tests otterbrix
+running 4 tests
+test otterbrix/src/database.rs - database::Database::open (line 187) - compile ... ok
+test otterbrix/src/database.rs - database::Database::execute_with_params (line 245) - compile ... ok
+test otterbrix/src/lib.rs - (line 31) - compile ... ok
+test otterbrix/src/value.rs - value::Value::get (line 145) ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.94s
+   Doc-tests otterbrix_sys
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+   Doc-tests seaorm_otterbrix
+running 2 tests
+test seaorm-otterbrix/src/proxy.rs - proxy::OtterbrixProxy (line 44) - compile ... ok
+test seaorm-otterbrix/src/lib.rs - (line 20) - compile ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+   Doc-tests sqlx_otterbrix
+running 4 tests
+test sqlx-otterbrix/src/options.rs - options::OtterbrixConnectOptions (line 38) - compile ... ok
+test sqlx-otterbrix/src/database.rs - database::Otterbrix (line 14) - compile ... ok
+test sqlx-otterbrix/src/lib.rs - (line 29) - compile ... ok
+test sqlx-otterbrix/src/type.rs - r#type::OtterbrixTypeInfo (line 31) ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.12s
